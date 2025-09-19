@@ -1,0 +1,336 @@
+===============================
+= Setting up the environment =
+===============================
+
+Changing directory to the location of the script...
+Directory changed to /home/pi/Desktop/alex
+
+
+
+===============================
+= Installing Python          =
+===============================
+
+
+
+
+===============================
+= Installing Dependencies    =
+===============================
+
+Creating virtual environment...
+Virtual environment created.
+
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Requirement already satisfied: pip in ./env/lib/python3.11/site-packages (23.0.1)
+Collecting pip
+  Using cached https://www.piwheels.org/simple/pip/pip-25.0.1-py3-none-any.whl (1.8 MB)
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 23.0.1
+    Uninstalling pip-23.0.1:
+      Successfully uninstalled pip-23.0.1
+Successfully installed pip-25.0.1
+
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Requirement already satisfied: numpy in /usr/lib/python3/dist-packages (1.24.2)
+Collecting matplotlib
+  Using cached matplotlib-3.10.1-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (11 kB)
+Requirement already satisfied: pyserial in /usr/lib/python3/dist-packages (3.5)
+Collecting contourpy>=1.0.1 (from matplotlib)
+  Using cached contourpy-1.3.1-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (5.4 kB)
+Collecting cycler>=0.10 (from matplotlib)
+  Using cached https://www.piwheels.org/simple/cycler/cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Collecting fonttools>=4.22.0 (from matplotlib)
+  Using cached fonttools-4.56.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (101 kB)
+Collecting kiwisolver>=1.3.1 (from matplotlib)
+  Using cached kiwisolver-1.4.8-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.2 kB)
+Collecting packaging>=20.0 (from matplotlib)
+  Using cached https://www.piwheels.org/simple/packaging/packaging-24.2-py3-none-any.whl (65 kB)
+Requirement already satisfied: pillow>=8 in /usr/lib/python3/dist-packages (from matplotlib) (9.4.0)
+Collecting pyparsing>=2.3.1 (from matplotlib)
+  Downloading https://www.piwheels.org/simple/pyparsing/pyparsing-3.2.3-py3-none-any.whl (111 kB)
+Collecting python-dateutil>=2.7 (from matplotlib)
+  Using cached https://www.piwheels.org/simple/python-dateutil/python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Requirement already satisfied: six>=1.5 in /usr/lib/python3/dist-packages (from python-dateutil>=2.7->matplotlib) (1.16.0)
+Using cached matplotlib-3.10.1-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (8.5 MB)
+Using cached contourpy-1.3.1-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (313 kB)
+Using cached fonttools-4.56.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (4.9 MB)
+Using cached kiwisolver-1.4.8-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (1.4 MB)
+WARNING: Error parsing dependencies of send2trash: Expected matching RIGHT_PARENTHESIS for LEFT_PARENTHESIS, after version specifier
+    sys-platform (=="darwin") ; extra == 'objc'
+                 ~^
+Installing collected packages: python-dateutil, pyparsing, packaging, kiwisolver, fonttools, cycler, contourpy, matplotlib
+Successfully installed contourpy-1.3.1 cycler-0.12.1 fonttools-4.56.0 kiwisolver-1.4.8 matplotlib-3.10.1 packaging-24.2 pyparsing-3.2.3 python-dateutil-2.9.0.post0
+
+Installing BreezySLAM...
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Obtaining file:///home/pi/Desktop/alex/libraries/external/BreezySLAM/python
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: BreezySLAM
+  Building editable for BreezySLAM (pyproject.toml): started
+  Building editable for BreezySLAM (pyproject.toml): finished with status 'done'
+  Created wheel for BreezySLAM: filename=breezyslam-0.1-0.editable-cp311-cp311-linux_aarch64.whl size=1453 sha256=4102d8dbb4cb30bf49214b3d7168629c7643908185cf8699eb2439869488f0a2
+  Stored in directory: /tmp/pip-ephem-wheel-cache-i2nfd7k0/wheels/c2/9e/07/912c9ff004535a78340564fa3925f9d8433eab14cf7b41c988
+Successfully built BreezySLAM
+WARNING: Error parsing dependencies of send2trash: Expected matching RIGHT_PARENTHESIS for LEFT_PARENTHESIS, after version specifier
+    sys-platform (=="darwin") ; extra == 'objc'
+                 ~^
+Installing collected packages: BreezySLAM
+Successfully installed BreezySLAM-0.1
+
+Installing pyrplidar...
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Obtaining file:///home/pi/Desktop/alex/libraries/external/pyrplidar
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: pyserial in /usr/lib/python3/dist-packages (from pyrplidar==0.1.2) (3.5)
+Building wheels for collected packages: pyrplidar
+  Building editable for pyrplidar (pyproject.toml): started
+  Building editable for pyrplidar (pyproject.toml): finished with status 'done'
+  Created wheel for pyrplidar: filename=pyrplidar-0.1.2-0.editable-py3-none-any.whl size=3236 sha256=6e66f24c8324b8ac9e778fa4c8a73388e8d978b6a75cd90ce6eee604de4cbeee
+  Stored in directory: /tmp/pip-ephem-wheel-cache-lemj4p5k/wheels/de/e0/82/377f01bb603365f65d46645cdf022ffdc17b9938885d937603
+Successfully built pyrplidar
+WARNING: Error parsing dependencies of send2trash: Expected matching RIGHT_PARENTHESIS for LEFT_PARENTHESIS, after version specifier
+    sys-platform (=="darwin") ; extra == 'objc'
+                 ~^
+Installing collected packages: pyrplidar
+Successfully installed pyrplidar-0.1.2
+
+Installing opencv-python...
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Collecting opencv-python
+  Downloading opencv_python-4.11.0.86-cp37-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (20 kB)
+Requirement already satisfied: numpy>=1.21.2 in /usr/lib/python3/dist-packages (from opencv-python) (1.24.2)
+Downloading opencv_python-4.11.0.86-cp37-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (42.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.2/42.2 MB 151.8 kB/s eta 0:00:00
+WARNING: Error parsing dependencies of send2trash: Expected matching RIGHT_PARENTHESIS for LEFT_PARENTHESIS, after version specifier
+    sys-platform (=="darwin") ; extra == 'objc'
+                 ~^
+Installing collected packages: opencv-python
+Successfully installed opencv-python-4.11.0.86
+
+Installing control...
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Obtaining file:///home/pi/Desktop/alex/libraries/epp2/control
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: numpy in /usr/lib/python3/dist-packages (from control==0.1.0) (1.24.2)
+Requirement already satisfied: matplotlib in ./env/lib/python3.11/site-packages (from control==0.1.0) (3.10.1)
+Requirement already satisfied: pyserial in /usr/lib/python3/dist-packages (from control==0.1.0) (3.5)
+Requirement already satisfied: contourpy>=1.0.1 in ./env/lib/python3.11/site-packages (from matplotlib->control==0.1.0) (1.3.1)
+Requirement already satisfied: cycler>=0.10 in ./env/lib/python3.11/site-packages (from matplotlib->control==0.1.0) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in ./env/lib/python3.11/site-packages (from matplotlib->control==0.1.0) (4.56.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in ./env/lib/python3.11/site-packages (from matplotlib->control==0.1.0) (1.4.8)
+Requirement already satisfied: packaging>=20.0 in ./env/lib/python3.11/site-packages (from matplotlib->control==0.1.0) (24.2)
+Requirement already satisfied: pillow>=8 in /usr/lib/python3/dist-packages (from matplotlib->control==0.1.0) (9.4.0)
+Requirement already satisfied: pyparsing>=2.3.1 in ./env/lib/python3.11/site-packages (from matplotlib->control==0.1.0) (3.2.3)
+Requirement already satisfied: python-dateutil>=2.7 in ./env/lib/python3.11/site-packages (from matplotlib->control==0.1.0) (2.9.0.post0)
+Requirement already satisfied: six>=1.5 in /usr/lib/python3/dist-packages (from python-dateutil>=2.7->matplotlib->control==0.1.0) (1.16.0)
+Building wheels for collected packages: control
+  Building editable for control (pyproject.toml): started
+  Building editable for control (pyproject.toml): finished with status 'done'
+  Created wheel for control: filename=control-0.1.0-0.editable-py3-none-any.whl size=1281 sha256=30d5deb668e40b1633f3c11193b7ad1e4bfd7870213de44c5eb29300589c419c
+  Stored in directory: /tmp/pip-ephem-wheel-cache-eeolkccf/wheels/19/db/12/a09c8ed266b277b398f5d6a695be37ab7c55eb5acfab1e07ed
+Successfully built control
+WARNING: Error parsing dependencies of send2trash: Expected matching RIGHT_PARENTHESIS for LEFT_PARENTHESIS, after version specifier
+    sys-platform (=="darwin") ; extra == 'objc'
+                 ~^
+Installing collected packages: control
+Successfully installed control-0.1.0
+
+Installing display...
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Obtaining file:///home/pi/Desktop/alex/libraries/epp2/display
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: numpy in /usr/lib/python3/dist-packages (from display==0.1.0) (1.24.2)
+Requirement already satisfied: matplotlib in ./env/lib/python3.11/site-packages (from display==0.1.0) (3.10.1)
+Requirement already satisfied: pyserial in /usr/lib/python3/dist-packages (from display==0.1.0) (3.5)
+Requirement already satisfied: contourpy>=1.0.1 in ./env/lib/python3.11/site-packages (from matplotlib->display==0.1.0) (1.3.1)
+Requirement already satisfied: cycler>=0.10 in ./env/lib/python3.11/site-packages (from matplotlib->display==0.1.0) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in ./env/lib/python3.11/site-packages (from matplotlib->display==0.1.0) (4.56.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in ./env/lib/python3.11/site-packages (from matplotlib->display==0.1.0) (1.4.8)
+Requirement already satisfied: packaging>=20.0 in ./env/lib/python3.11/site-packages (from matplotlib->display==0.1.0) (24.2)
+Requirement already satisfied: pillow>=8 in /usr/lib/python3/dist-packages (from matplotlib->display==0.1.0) (9.4.0)
+Requirement already satisfied: pyparsing>=2.3.1 in ./env/lib/python3.11/site-packages (from matplotlib->display==0.1.0) (3.2.3)
+Requirement already satisfied: python-dateutil>=2.7 in ./env/lib/python3.11/site-packages (from matplotlib->display==0.1.0) (2.9.0.post0)
+Requirement already satisfied: six>=1.5 in /usr/lib/python3/dist-packages (from python-dateutil>=2.7->matplotlib->display==0.1.0) (1.16.0)
+Building wheels for collected packages: display
+  Building editable for display (pyproject.toml): started
+  Building editable for display (pyproject.toml): finished with status 'done'
+  Created wheel for display: filename=display-0.1.0-0.editable-py3-none-any.whl size=1281 sha256=a7968c0d2265732e42dd4e7e413cc602b07cce2aaf7a47045f226ed8487e6fdc
+  Stored in directory: /tmp/pip-ephem-wheel-cache-azkjs6t0/wheels/80/73/29/de3e9a30b97552cc8c22101429223e79ac434d0630e5c48f5d
+Successfully built display
+WARNING: Error parsing dependencies of send2trash: Expected matching RIGHT_PARENTHESIS for LEFT_PARENTHESIS, after version specifier
+    sys-platform (=="darwin") ; extra == 'objc'
+                 ~^
+Installing collected packages: display
+Successfully installed display-0.1.0
+
+Installing lidar...
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Obtaining file:///home/pi/Desktop/alex/libraries/epp2/lidar
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: numpy in /usr/lib/python3/dist-packages (from lidar==0.1.0) (1.24.2)
+Requirement already satisfied: matplotlib in ./env/lib/python3.11/site-packages (from lidar==0.1.0) (3.10.1)
+Requirement already satisfied: pyserial in /usr/lib/python3/dist-packages (from lidar==0.1.0) (3.5)
+Requirement already satisfied: contourpy>=1.0.1 in ./env/lib/python3.11/site-packages (from matplotlib->lidar==0.1.0) (1.3.1)
+Requirement already satisfied: cycler>=0.10 in ./env/lib/python3.11/site-packages (from matplotlib->lidar==0.1.0) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in ./env/lib/python3.11/site-packages (from matplotlib->lidar==0.1.0) (4.56.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in ./env/lib/python3.11/site-packages (from matplotlib->lidar==0.1.0) (1.4.8)
+Requirement already satisfied: packaging>=20.0 in ./env/lib/python3.11/site-packages (from matplotlib->lidar==0.1.0) (24.2)
+Requirement already satisfied: pillow>=8 in /usr/lib/python3/dist-packages (from matplotlib->lidar==0.1.0) (9.4.0)
+Requirement already satisfied: pyparsing>=2.3.1 in ./env/lib/python3.11/site-packages (from matplotlib->lidar==0.1.0) (3.2.3)
+Requirement already satisfied: python-dateutil>=2.7 in ./env/lib/python3.11/site-packages (from matplotlib->lidar==0.1.0) (2.9.0.post0)
+Requirement already satisfied: six>=1.5 in /usr/lib/python3/dist-packages (from python-dateutil>=2.7->matplotlib->lidar==0.1.0) (1.16.0)
+Building wheels for collected packages: lidar
+  Building editable for lidar (pyproject.toml): started
+  Building editable for lidar (pyproject.toml): finished with status 'done'
+  Created wheel for lidar: filename=lidar-0.1.0-0.editable-py3-none-any.whl size=1257 sha256=52d6da93e44c09096d765125d3abd2b2cb411c5757084620901d1d5f3c0936e0
+  Stored in directory: /tmp/pip-ephem-wheel-cache-w21dd6bv/wheels/d6/67/a0/6cf42cf088aa51ecbfa14bb4a12e1b32c2c04dbe80fa8389f7
+Successfully built lidar
+WARNING: Error parsing dependencies of send2trash: Expected matching RIGHT_PARENTHESIS for LEFT_PARENTHESIS, after version specifier
+    sys-platform (=="darwin") ; extra == 'objc'
+                 ~^
+Installing collected packages: lidar
+Successfully installed lidar-0.1.0
+
+Installing networking...
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Obtaining file:///home/pi/Desktop/alex/libraries/epp2/networking
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: numpy in /usr/lib/python3/dist-packages (from networking==0.1.0) (1.24.2)
+Requirement already satisfied: matplotlib in ./env/lib/python3.11/site-packages (from networking==0.1.0) (3.10.1)
+Requirement already satisfied: pyserial in /usr/lib/python3/dist-packages (from networking==0.1.0) (3.5)
+Requirement already satisfied: contourpy>=1.0.1 in ./env/lib/python3.11/site-packages (from matplotlib->networking==0.1.0) (1.3.1)
+Requirement already satisfied: cycler>=0.10 in ./env/lib/python3.11/site-packages (from matplotlib->networking==0.1.0) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in ./env/lib/python3.11/site-packages (from matplotlib->networking==0.1.0) (4.56.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in ./env/lib/python3.11/site-packages (from matplotlib->networking==0.1.0) (1.4.8)
+Requirement already satisfied: packaging>=20.0 in ./env/lib/python3.11/site-packages (from matplotlib->networking==0.1.0) (24.2)
+Requirement already satisfied: pillow>=8 in /usr/lib/python3/dist-packages (from matplotlib->networking==0.1.0) (9.4.0)
+Requirement already satisfied: pyparsing>=2.3.1 in ./env/lib/python3.11/site-packages (from matplotlib->networking==0.1.0) (3.2.3)
+Requirement already satisfied: python-dateutil>=2.7 in ./env/lib/python3.11/site-packages (from matplotlib->networking==0.1.0) (2.9.0.post0)
+Requirement already satisfied: six>=1.5 in /usr/lib/python3/dist-packages (from python-dateutil>=2.7->matplotlib->networking==0.1.0) (1.16.0)
+Building wheels for collected packages: networking
+  Building editable for networking (pyproject.toml): started
+  Building editable for networking (pyproject.toml): finished with status 'done'
+  Created wheel for networking: filename=networking-0.1.0-0.editable-py3-none-any.whl size=1317 sha256=fdfad83640ccd4aa2b77381aef7c61c9dd7a9c49f01262804befb0359faa0875
+  Stored in directory: /tmp/pip-ephem-wheel-cache-9js1ayc0/wheels/14/ac/d0/c7e9e27d23c0ca83b309595eb82ec7875707497dc7b2b94e41
+Successfully built networking
+WARNING: Error parsing dependencies of send2trash: Expected matching RIGHT_PARENTHESIS for LEFT_PARENTHESIS, after version specifier
+    sys-platform (=="darwin") ; extra == 'objc'
+                 ~^
+Installing collected packages: networking
+Successfully installed networking-0.1.0
+
+Installing pubsub...
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Obtaining file:///home/pi/Desktop/alex/libraries/epp2/pubsub
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: numpy in /usr/lib/python3/dist-packages (from pubsub==0.1.0) (1.24.2)
+Requirement already satisfied: matplotlib in ./env/lib/python3.11/site-packages (from pubsub==0.1.0) (3.10.1)
+Requirement already satisfied: pyserial in /usr/lib/python3/dist-packages (from pubsub==0.1.0) (3.5)
+Requirement already satisfied: contourpy>=1.0.1 in ./env/lib/python3.11/site-packages (from matplotlib->pubsub==0.1.0) (1.3.1)
+Requirement already satisfied: cycler>=0.10 in ./env/lib/python3.11/site-packages (from matplotlib->pubsub==0.1.0) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in ./env/lib/python3.11/site-packages (from matplotlib->pubsub==0.1.0) (4.56.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in ./env/lib/python3.11/site-packages (from matplotlib->pubsub==0.1.0) (1.4.8)
+Requirement already satisfied: packaging>=20.0 in ./env/lib/python3.11/site-packages (from matplotlib->pubsub==0.1.0) (24.2)
+Requirement already satisfied: pillow>=8 in /usr/lib/python3/dist-packages (from matplotlib->pubsub==0.1.0) (9.4.0)
+Requirement already satisfied: pyparsing>=2.3.1 in ./env/lib/python3.11/site-packages (from matplotlib->pubsub==0.1.0) (3.2.3)
+Requirement already satisfied: python-dateutil>=2.7 in ./env/lib/python3.11/site-packages (from matplotlib->pubsub==0.1.0) (2.9.0.post0)
+Requirement already satisfied: six>=1.5 in /usr/lib/python3/dist-packages (from python-dateutil>=2.7->matplotlib->pubsub==0.1.0) (1.16.0)
+Building wheels for collected packages: pubsub
+  Building editable for pubsub (pyproject.toml): started
+  Building editable for pubsub (pyproject.toml): finished with status 'done'
+  Created wheel for pubsub: filename=pubsub-0.1.0-0.editable-py3-none-any.whl size=1266 sha256=13cfdaddc693668964063d0d2d73d25f57bf6199da450453b4aac828e22bf28f
+  Stored in directory: /tmp/pip-ephem-wheel-cache-yz7i8347/wheels/23/66/1c/17ccb630e9db0f8eb0a9f4d0b071af77c4f38e986aeadb606c
+Successfully built pubsub
+WARNING: Error parsing dependencies of send2trash: Expected matching RIGHT_PARENTHESIS for LEFT_PARENTHESIS, after version specifier
+    sys-platform (=="darwin") ; extra == 'objc'
+                 ~^
+Installing collected packages: pubsub
+Successfully installed pubsub-0.1.0
+
+Installing slam...
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Obtaining file:///home/pi/Desktop/alex/libraries/epp2/slam
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: numpy in /usr/lib/python3/dist-packages (from slam==0.1.0) (1.24.2)
+Requirement already satisfied: matplotlib in ./env/lib/python3.11/site-packages (from slam==0.1.0) (3.10.1)
+Requirement already satisfied: pyserial in /usr/lib/python3/dist-packages (from slam==0.1.0) (3.5)
+Requirement already satisfied: contourpy>=1.0.1 in ./env/lib/python3.11/site-packages (from matplotlib->slam==0.1.0) (1.3.1)
+Requirement already satisfied: cycler>=0.10 in ./env/lib/python3.11/site-packages (from matplotlib->slam==0.1.0) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in ./env/lib/python3.11/site-packages (from matplotlib->slam==0.1.0) (4.56.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in ./env/lib/python3.11/site-packages (from matplotlib->slam==0.1.0) (1.4.8)
+Requirement already satisfied: packaging>=20.0 in ./env/lib/python3.11/site-packages (from matplotlib->slam==0.1.0) (24.2)
+Requirement already satisfied: pillow>=8 in /usr/lib/python3/dist-packages (from matplotlib->slam==0.1.0) (9.4.0)
+Requirement already satisfied: pyparsing>=2.3.1 in ./env/lib/python3.11/site-packages (from matplotlib->slam==0.1.0) (3.2.3)
+Requirement already satisfied: python-dateutil>=2.7 in ./env/lib/python3.11/site-packages (from matplotlib->slam==0.1.0) (2.9.0.post0)
+Requirement already satisfied: six>=1.5 in /usr/lib/python3/dist-packages (from python-dateutil>=2.7->matplotlib->slam==0.1.0) (1.16.0)
+Building wheels for collected packages: slam
+  Building editable for slam (pyproject.toml): started
+  Building editable for slam (pyproject.toml): finished with status 'done'
+  Created wheel for slam: filename=slam-0.1.0-0.editable-py3-none-any.whl size=1242 sha256=9b1d569c3ff1b2fc7dc40f056db6e0baa625fe40975b97bbcb5f8b78bb4e46f0
+  Stored in directory: /tmp/pip-ephem-wheel-cache-xljrwngz/wheels/19/c8/5a/991bc9283f9e5e3b8dc411c6bd1ca6a3041ac8edd2c9816b8b
+Successfully built slam
+WARNING: Error parsing dependencies of send2trash: Expected matching RIGHT_PARENTHESIS for LEFT_PARENTHESIS, after version specifier
+    sys-platform (=="darwin") ; extra == 'objc'
+                 ~^
+Installing collected packages: slam
+Successfully installed slam-0.1.0
+
+Setup complete. Exiting...
